@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "video-effect",
+    "slug": "video-effect",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "video-effect"
+}
