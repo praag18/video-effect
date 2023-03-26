@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Ranges = ({ label, onChange, value, max, steps }) => {
+const Ranges = ({ label, onChange, value, max, min, steps }) => {
     return (
         <label style={{ display: "flex", justifyContent: "center", flexDirection: "column", fontFamily: "monospace" }}>
             {
@@ -9,7 +9,7 @@ const Ranges = ({ label, onChange, value, max, steps }) => {
 
             <input style={{ width: "450px" }}
                 type="range"
-                min={0}
+                min={min}
                 max={max}
                 step={steps}
                 value={value}
