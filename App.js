@@ -103,6 +103,13 @@ export default class App extends Component {
               <Bus ref="vid">
                 <Saturate contrast={contrast} saturation={saturation} brightness={brightness}>
                   {spider}
+
+                  {/* {redraw => (
+                    <Video onFrame={redraw} autoPlay loop>
+                      <source type="video/mp4" src={videoMP4} />
+                    </Video>
+                  )} */}
+
                 </Saturate>
               </Bus>
               <BlurV map={map} passes={passes} factor={factor}>
