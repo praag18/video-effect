@@ -114,11 +114,11 @@ export default class App extends Component {
           </View>
 
           <View style={[styles.bottomCont, styles.flexjustify]}>
-            <Ranges max={4} steps={0.1} value={contrast} onChange={contrast => this.setState({ contrast })} label="Contrast" />
-            <Ranges max={4} steps={0.1} value={saturation} onChange={saturation => this.setState({ saturation })} label="Saturation" />
-            <Ranges max={4} steps={0.1} value={brightness} onChange={brightness => this.setState({ brightness })} label="Brightness" />
-            <Ranges max={8} steps={0.2} value={factor} onChange={factor => this.setState({ factor })} label="Blur" />
-            <Ranges max={8} value={passes} onChange={passes => this.setState({ passes })} label="Blur Passes" />
+            <Ranges min={0} max={4} steps={0.1} value={contrast} onChange={contrast => this.setState({ contrast })} label="Contrast" />
+            <Ranges min={0} max={4} steps={0.1} value={saturation} onChange={saturation => this.setState({ saturation })} label="Saturation" />
+            <Ranges min={0} max={4} steps={0.1} value={brightness} onChange={brightness => this.setState({ brightness })} label="Brightness" />
+            <Ranges min={0} max={8} steps={0.2} value={factor} onChange={factor => this.setState({ factor })} label="Blur" />
+            <Ranges min={1} max={8} value={passes} onChange={passes => this.setState({ passes })} label="Blur Passes" />
           </View>
 
           <View style={styles.lowerCont}>
